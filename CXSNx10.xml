@@ -1,0 +1,379 @@
+<!-- type="company" 
+	block="block/CXSNx10.js" 
+	generator="generator/CXSNx10.js"  
+	language="language/CXSNx10/"
+	lib="CXSNx10/"
+-->
+<script type="text/javascript" src="../../blocks/company/CXSNx10.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/CXSNx10.js"></script>
+
+<category id="CXSNX10_1" name="CXSNx10系列" colour="100">
+	<category id="CXSNX10_0.1" name="编程入门版" colour="200">
+		<block type="Delay_Easy_S">
+			<value name="delay_num">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="LED_Easy"></block>
+	</category>	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	<category id="CXSNX10_10" name="X10_UNO" colour="200">	
+		<category id="CXSNX10_1.0" name="常用块" colour="200">
+			<block type="Delay_Easy_S">
+				<value name="delay_num">
+					<shadow type="math_number">
+						<field name="NUM">1</field>
+					</shadow>
+				</value>
+			</block>
+			
+		</category>	
+		<category id="CXSNX10_1.1" name="基础模块" colour="200">
+			<!-- LED模块 -->			
+			<block type="LED_CON"></block>
+			<block type="LED_PWM_CON">
+				<value name="num1">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>				
+			</block>
+			<block type="LEDPWM_CON_IN"></block>
+			<block type="LEDPWM_CON_OUT"></block>			
+			<!-- 按键库 -->	
+			<block type="key_Reading"></block>
+			<!-- 电位器模块 -->	
+			<block type="RP_Reading"></block>
+			<!-- 蜂鸣器模块 -->	
+			<block type="BUZZ_CON"></block>
+			<!-- 雨滴检测模块 -->	
+			<block type="Raindrop_Reading"></block>
+			<!-- 土壤湿度检测模块 -->	
+			<block type="SoilMoisture_Reading"></block>
+			<!-- 声音检测模块 -->	
+			<block type="SoundDetection_Reading"></block>
+			<!--红外灰度模块-->
+			<block type="CXSN_IR_Gray"></block>
+			<!--人体感应模块-->
+			<block type="RSD_Reading"></block>
+			<!-- 水浊检测模块 -->	
+			<block type="WaterTurbidity_Reading"></block>
+			<!-- 火焰传感器 -->	
+			<block type="Flame_Reading_D"></block>
+			<block type="Flame_Reading_A"></block>
+			<!-- 烟雾传感器 -->	
+			<block type="Smog_Reading_D"></block>
+			<block type="Smog_Reading_A"></block>
+			<!-- 环境光检测 -->	
+			<block type="Photosensitive_Reading_D"></block>
+			<block type="Photosensitive_Reading_A"></block>
+			<!-- 温湿度模块DHT11 -->	
+			<block type="DHT11_CON"></block>
+			<!-- DS18B20 -->	
+			<block type="DS18B20_CON"></block>
+			<!-- PM2.5检测模块 -->	
+			<block type="CXSN10_PM25_Port"></block>
+			<block type="CXSN10_PM25_Reading"></block>
+			<block type="CXSN10_PM25_return"></block>
+			<!-- MOS驱动模块 -->	
+			<block type="CXSNX10_MOS_CON"></block>
+			<block type="CXSNX10_MOS_CON_PWM">
+				<value name="num1">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<!-- 超声波测距模块 -->	
+			<block type="CXSNX10_Ultrasonic_CON"></block>			
+			<!-- 继电器驱动模块 -->	
+			<block type="CXSNX10_Relay_CON"></block>
+		</category>	
+		/*-------------------------------------------------------------------------------------------------------------------------*/	
+		<category id="CXSNX10_2" name="显示模块" colour="200">
+			<!-- 色彩输出模块 -->	
+			<category id="CXSNX10_7" name="色彩输出模块" colour="150">
+				<block type="CXSNX10_RGB_Port1">//灯
+					<value name="PIN">
+						<shadow type="pins_analog"></shadow>
+					</value>
+				</block>
+				<block type="CXSNX10_RGB_Color">
+					<value name="num1">
+						<shadow type="math_number">
+							<field name="NUM">100</field>
+						</shadow>
+					</value>
+					<value name="num2">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num3">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num4">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="CXSNX10_RGB_Port2">//灯带
+					<value name="PIN">
+						<shadow type="pins_analog"></shadow>
+					</value>
+					<value name="num1">
+						<shadow type="math_number">
+							<field name="NUM">1</field>
+						</shadow>
+					</value>
+					<value name="num2">
+						<shadow type="math_number">
+							<field name="NUM">128</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="CXSNX10_RGB_Parameter">
+					<value name="num1">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num2">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num3">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num4">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+			</category>
+			<!--OLED-->		
+			<category id="CXSNX10_11" name="OLED屏幕" colour="200">
+				<block type="CXSNX10_OLED_EN">
+					<value name="Text">
+						<block type="text">
+							<field name="TEXT">CXSN Welcome you</field>
+						</block>
+					</value>
+				</block>
+				<block type="CXSNX10_OLED_Num">
+					<value name="num">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="CXSNX10_OLED_Eliminate"></block>
+			</category>
+			<!--数码显示模块-->
+			<category id="CXSNX10_11" name="数码管显示" colour="200">
+				<block type="CXSNX10_Nixietube_Port1">
+					<value name="num">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="CXSNX10_Nixietube_Port2">
+					<value name="num">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="CXSNX10_Nixietube_Clock">
+					<value name="num1">
+						<shadow type="math_number">
+							<field name="NUM">12</field>
+						</shadow>
+					</value>
+					<value name="num2">
+						<shadow type="math_number">
+							<field name="NUM">12</field>
+						</shadow>
+					</value>
+				</block>	
+				<block type="CXSNX10_Clock_Hour_Port"></block>
+				<block type="CXSNX10_Clock_Minute_Port"></block>
+				<block type="CXSNX10_Clock_Setup_Port"></block>
+				<block type="CXSNX10_Clock_Hour_Setup"></block>
+				<block type="CXSNX10_Clock_Minute_Setup"></block>
+				<block type="CXSNX10_Clock_OK_Setup"></block>
+				<block type="CXSNX10_Clock_Hour_OK"></block>
+				<block type="CXSNX10_Clock_Minute_OK"></block>
+				<block type="CXSNX10_Clock_Setup_OK"></block>
+			</category>
+		</category>
+		/*-------------------------------------------------------------------------------------------------------------------------*/
+		<category id="CXSNX10_2" name="音频模块" colour="200">
+			<!-- MP3 -->		
+			<category id="CXSNX101_8" name="MP3播放模块" colour="200">
+				<category id="CXSNX101_8" name="新款MP3模块" coloer="200">
+					<block type="CXSNX10_MP3_Port">
+						
+					</block>
+					<block type="CXSNX10_MP3_Play"></block> 
+					<block type="CXSNX10_MP3_Pause"></block> 
+					<block type="CXSNX10_MP3_Previous"></block>
+					<block type="CXSNX10_MP3_Next"></block>
+				</category>
+				<category id="CXSNX101_8" name="旧款MP3模块" colour="100">
+					<block type="CXSNX10_JMP3_Port"></block>
+					<block type="CXSNX10_JMP3_Play"></block> 
+					<block type="CXSNX10_JMP3_Pause"></block> 
+					<block type="CXSNX10_JMP3_Previous"></block>
+					<block type="CXSNX10_JMP3_Next"></block>
+				</category>
+			</category>	
+			<!-- 多路语音录放模块	-->
+			<category id="CXSNX10_10" name="多路语音录放模块" colour="200">
+				<block type="CXSNX10_Record_Port"></block>
+				<block type="CXSNX10_Record_Start">
+					<value name="record_num1">
+						<shadow type="math_number">
+							<field name="NUM">1</field>
+						</shadow>
+					</value>		
+				</block>			
+				<block type="CXSNX10_Record_SuspendRecord"></block>
+				<block type="CXSNX10_Record_Play">
+					<value name="record_num2">
+						<shadow type="math_number">
+							<field name="NUM">1</field>
+						</shadow>
+					</value>		
+				</block>
+				<block type="CXSNX10_Record_PlayPause"></block>
+			</category>
+		</category>
+		/*-------------------------------------------------------------------------------------------------------------------------*/
+		<category id="CXSNX10_2" name="电机/舵机驱动" colour="200">
+			<!-- 电机驱动模块 -->	
+			<category id="CXSNX101_9" name="金属片电机" colour="200">
+				<block type="CXSNX10_Motor_Port"></block>
+				<block type="CXSNX10_Motor_2">
+					<value name="num">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num1">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="CXSNX10_Motor_1">
+					<value name="num">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num1">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>	    	
+				</block>
+			</category>	
+			<!-- 小颗粒大颗粒电机 -->	
+			<category id="CXSNX10_1.2" name="小颗粒/大颗粒电机" colour="200">
+				<block type="XPMotor_CON"></block>
+				<block type="XPMotor_CON_PWM">
+					<value name="num">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>	
+				</block>
+			</category>	
+			<!--舵机驱动模块-->
+			<category id="CXSNX101_9.1" name="舵机驱动模块" colour="200">
+				<block type="CXSNX10_Servo" name="舵机设置">
+					<value name="num">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+					<value name="num1">
+						<shadow type="math_number">
+							<field name="NUM">1000</field>
+						</shadow>
+					</value>
+				</block>
+			</category>	
+		</category>
+		/*-------------------------------------------------------------------------------------------------------------------------*/		
+		<category id="CXSNX11_01" name="遥控器" colour="300">
+			<!-- 红外遥控器 -->	
+			<category id="CXSNX1011_010" name="红外遥控器" colour="300">
+				<!--红外判断 -->
+				<block type="CXSNX10_IR_mini">
+					<value name="PIN">
+						<shadow type="pins_digital">
+							<field name="PIN">11</field>
+						</shadow>
+					</value>
+				</block>
+				<!-- 红外mini遥控器键值 -->
+				<block type="CXSNX10_IR_val"></block>
+				<!-- 红外遥控器键值 -->
+				<block type="CXSNX10_Remote_val"></block>
+			</category>	
+			<!--PS2遥控器-->
+			<category id="CXSNX1011_011" name="PS2遥控器" colour="300">
+				<!-- 端口设置 -->	
+				<block type="CXSNX10_PS2_Port"></block>
+				<!-- 有数据可读吗 -->	
+				<block type="CXSNX10_PS2_Read"></block>
+				<!-- 读取字符串 -->	
+				<block type="CXSNX10_PS2_Reading"></block>
+				<!-- 按键数据 -->	
+				<block type="CXSNX10_PS2_Readnum"></block>				
+			</category>	
+		</category>
+
+		<category id="CXSNX11_02" name="WIFI模块" colour="350">
+			<block type="CXSNX10_wifi_val"></block>
+			<block type="CXSNX10_wifi_onoff"></block>
+			<block type="CXSNX10_wifi_rgb"></block>
+			<block type="CXSNX10_wifi_readonly">
+				<value name="num1">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>				
+			</block>
+		</category>	
+
+		<category id="CXSNX12_001" name="循迹模块" colour="265">
+			<block type="CXSNX10_trackingIR_val1"></block>
+			<block type="CXSNX10_trackingIR_1"></block>
+		</category>	
+		/*-------------------------------------------------------------------------------------------------------------------------*/	
+
+	</category>	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+	/*-------------------------------------------------------------------------------------------------------------------------*/	
+</category>
